@@ -10,6 +10,7 @@ body {
     background-image: url("Layer 2.png"); /* Ganti dengan URL gambar latar belakang Anda */
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 li{
@@ -50,6 +51,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    
+    
 }
 
 .navbar .logo a{
@@ -59,13 +63,10 @@ header{
 
 .navbar .links {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     
-}
-
-.navbar .links  {
     background-color: rgb(34, 33, 33);
-    opacity: 0.78;
+    opacity: 0.85;
     box-shadow: 0px 8px 23.78px 5.22px rgba(0, 0, 0, 0.35);
     margin-top: 70px;
     z-index: 4;
@@ -73,6 +74,8 @@ header{
     width: 450px;
     height: 50px;
     position: static;
+    
+
 }
 
 .navbar .toggle_btn {
@@ -80,9 +83,13 @@ header{
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
+    margin-right: 50px;
+
+    
 }
 
 .action_btn {
+    margin-right: 50px;
     background-color: orange;
     color: #fff;
     padding:  0.5rem 1rem;
@@ -106,8 +113,9 @@ header{
 
 /*Dropdown Menu*/
 .dropdown_menu{
+    
     display: none;
-    position: absolute;
+    position: fixed;
     right: 2rem;
     top: 60px;
     width: 300px;
@@ -121,6 +129,7 @@ header{
 
 .dropdown_menu.open{
     height: 250px;
+
 }
 
 .dropdown_menu li{
@@ -128,12 +137,14 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .dropdown_menu .action_btn{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-right: auto;
 }
 
 
@@ -152,8 +163,77 @@ section#home{
 #home h1{
     font-size: 3rem;
     margin-bottom: 1rem;
+
+}
+
+section#about{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Noto Sans";
+    color: rgb(52, 50, 56);
+}
+
+#about h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
     
 }
+
+section#project{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Noto Sans";
+    color: rgb(52, 50, 56);
+}
+
+#project h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    
+}
+
+section#file{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Noto Sans";
+    color: rgb(52, 50, 56);
+}
+
+#file h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    
+}
+
+section#contact{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Noto Sans";
+    color: rgb(52, 50, 56);
+}
+
+#contact h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    
+}
+
 
 /*Responsive Navbar*/
 @media(max-width: 992px){
